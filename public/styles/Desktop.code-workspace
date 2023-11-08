@@ -1,0 +1,24 @@
+{
+  "folders": [
+	{
+		"path": "../../.."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "java-script",
+    "liveServer.settings.port": 5501
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": []
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-vscode.cpptools",
+      "blackboxapp.blackbox",
+      "ecmel.vscode-html-css",
+      "bradlc.vscode-tailwindcss",
+      "esbenp.prettier-vscode"
+    ]
+  }
+}

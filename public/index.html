@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffe Shop</title>
+    <link rel="stylesheet" href="./styles/app.css" />
+  </head>
+  <body class="font-Dana bg-gray-100 dark:bg-zinc-800">
+    <svg class="hidden">
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        id="moon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+        />
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        id="sun"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+        />
+      </symbol>
+
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        id="shopping-cart"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+        />
+      </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        id="arrow-left-on-rectangle"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"
+        />
+      </symbol>
+    </svg>
+    <div class="bg-header w-full h-screen absolute bg-cover bg-no-repeat"></div>
+    <header
+      class="fixed top-9 right-0 left-0 w-[90%] h-24 mx-auto bg-black/50 rounded-3xl flex justify-between items-center px-10 py-5 tracking-tightest backdrop-blur-[6px]"
+    >
+      <nav class="flex items-center gap-x-9 h-14">
+        <div class=""><img src="./images/app-logo.png" alt="" /></div>
+        <ul
+          class="flex gap-x-9 text-xl text-gray-300 h-full items-center child:py-3.5"
+        >
+          <li class="text-orange-200 font-DanaMedium">
+            <a href="#">صفحه اصلی</a>
+          </li>
+          <li class="relative transition-colors group hover:text-orange-300">
+            <a href="#">فروشگاه</a>
+            <div
+              class="absolute top-full transition-all opacity-0 invisible group-hover:opacity-100 group-hover:visible flex flex-col gap-y-4 p-6 w-52 h-[272px] bg-white shadow-main border-t-[3px] border-[#FAB873] rounded-2xl text-right tracking-normal text-base font-normal leading-6 text-zinc-700 child:transition-colors child-hover:text-orange-300"
+            >
+              <a href="#">قهوه ویژه</a>
+              <a href="#">ویژه در سطح جهانی</a>
+              <a href="#">قهوه درجه یک</a>
+              <a href="#">ترکیبات تجاری</a>
+              <a href="#">کپسول قهوه</a>
+              <a href="#">قهوه زینو برزیلی</a>
+            </div>
+          </li>
+          <li><a href="#">دیکشنری</a></li>
+          <li><a href="#">بلاگ</a></li>
+          <li><a href="#">درباره ما</a></li>
+          <li><a href="#">تماس با ما</a></li>
+        </ul>
+      </nav>
+      <div class="flex items-center text-orange-200 gap-x-10">
+        <div class="flex gap-x-5 items-center">
+          <div class="py-3">
+            <div class="">
+              <svg class="w-8 h-8">
+                <use href="#shopping-cart"></use>
+              </svg>
+            </div>
+            <!-- cart -->
+            <div class=""></div>
+          </div>
+          <div class="">
+            <svg class="w-8 h-8">
+              <use href="#moon"></use>
+            </svg>
+          </div>
+        </div>
+        <span class="border-white/20 border-l h-14"></span>
+        <a href="#" class="flex items-center text-xl gap-x-2.5">
+          <svg class="w-8 h-8 rotate-180">
+            <use href="#arrow-left-on-rectangle"></use>
+          </svg>
+          ورود | ثبت نام
+        </a>
+      </div>
+    </header>
+  </body>
+</html>
