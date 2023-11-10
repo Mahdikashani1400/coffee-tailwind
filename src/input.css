@@ -40,3 +40,8 @@
     font-display: "swap";
   }
 }
+/* @layer components {
+  .text-normal {
+    @apply font-medium text-xs leading-6;
+  }
+} */

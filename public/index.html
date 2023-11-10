@@ -65,6 +65,20 @@
           d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"
         />
       </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        id="chevron-left"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5L8.25 12l7.5-7.5"
+        />
+      </symbol>
     </svg>
     <div class="bg-header w-full h-screen absolute bg-cover bg-no-repeat"></div>
     <header
@@ -81,7 +95,7 @@
           <li class="relative transition-colors group hover:text-orange-300">
             <a href="#">فروشگاه</a>
             <div
-              class="absolute top-full transition-all opacity-0 invisible group-hover:opacity-100 group-hover:visible flex flex-col gap-y-4 p-6 w-52 h-[272px] bg-white shadow-main border-t-[3px] border-[#FAB873] rounded-2xl text-right tracking-normal text-base font-normal leading-6 text-zinc-700 child:transition-colors child-hover:text-orange-300"
+              class="absolute top-full transition-all opacity-0 invisible group-hover:opacity-100 group-hover:visible delay-75 flex flex-col gap-y-4 p-6 w-52 h-[272px] bg-white shadow-main border-t-[3px] border-[#FAB873] rounded-2xl text-right tracking-normal text-base font-normal leading-6 text-zinc-700 child:transition-colors child-hover:text-orange-300 dark:bg-zinc-700 dark:text-white"
             >
               <a href="#">قهوه ویژه</a>
               <a href="#">ویژه در سطح جهانی</a>
@@ -99,18 +113,103 @@
       </nav>
       <div class="flex items-center text-orange-200 gap-x-10">
         <div class="flex gap-x-5 items-center">
-          <div class="py-3">
+          <div class="py-3 relative group">
             <div class="">
               <svg class="w-8 h-8">
                 <use href="#shopping-cart"></use>
               </svg>
             </div>
             <!-- cart -->
-            <div class=""></div>
+            <div
+              class="absolute invisible opacity-0 top-full left-0 flex flex-col gap-y-5 transition-all group-hover:opacity-100 group-hover:visible delay-75 p-5 w-[400px] bg-white shadow-main border-t-[3px] border-[#FAB873] rounded-2xl text-right tracking-normal text-base font-normal leading-6 text-zinc-700 dark:bg-zinc-700"
+            >
+              <div
+                class="flex justify-between font-DanaMedium text-xs tracking-tighter"
+              >
+                <span class="text-gray-300">2 مورد</span>
+                <a
+                  href="#"
+                  class="text-orange-300 flex items-center font-medium"
+                  >مشاهده سبد خرید
+                  <svg class="w-4 h-4 font-medium shrink-0">
+                    <use href="#chevron-left"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="flex flex-col gap-y-10">
+                <div
+                  class="flex gap-x-2.5 pb-5 border-b border-gray-300 dark:border-white/5"
+                >
+                  <div class="w-[120px] h-[120px]">
+                    <img
+                      class="w-full h-full"
+                      src="./images/products/p2.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="w-[230px] flex flex-col font-DanaMedium">
+                    <h4
+                      class="text-zinc-700 text-base font-medium mb-5 line-clamp-2 dark:text-white"
+                    >
+                      قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                    </h4>
+                    <span
+                      class="text-teal-600 text-xs font-semibold tracking-tighter leading-6 dark:text-emerald-500"
+                      >29.500 تومان تخفیف</span
+                    >
+                    <p class="text-sm text-zinc-700 dark:text-white">
+                      <span class="text-xl font-semibold">175,000</span> تومان
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="flex gap-x-2.5 pb-5 border-b border-gray-300 dark:border-white/5"
+                >
+                  <div class="w-[120px] h-[120px]">
+                    <img
+                      class="w-full h-full"
+                      src="./images/products/p3.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="w-[230px] flex flex-col font-DanaMedium">
+                    <h4
+                      class="text-zinc-700 text-base font-medium mb-5 line-clamp-2 dark:text-white"
+                    >
+                      قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی
+                    </h4>
+                    <span
+                      class="text-teal-600 text-xs font-semibold tracking-tighter leading-6 dark:text-emerald-500"
+                      >14.500 تومان تخفیف</span
+                    >
+                    <p class="text-sm text-zinc-700 dark:text-white">
+                      <span class="text-xl font-semibold">285,000</span> تومان
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-between">
+                <div class="pt-1">
+                  <span class="text-gray-300">مبلغ پرداخت</span>
+                  <p class="text-sm text-zinc-700 dark:text-white">
+                    <span class="text-xl font-semibold">560,000</span> تومان
+                  </p>
+                </div>
+                <a
+                  href="#"
+                  class="flex items-center justify-center bg-teal-600 text-white text-xl text-normal tracking-tightest w-36 rounded-xl transition-all dark:bg-emerald-500 hover:bg-emerald-700 dark:hover:bg-emerald-600"
+                >
+                  ثبت سفارش
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="">
-            <svg class="w-8 h-8">
+          <div class="" id="themeToggle">
+            <svg class="w-8 h-8 cursor-pointer inline-block dark:hidden">
               <use href="#moon"></use>
+            </svg>
+            <svg class="w-8 h-8 cursor-pointer hidden dark:inline-block">
+              <use href="#sun"></use>
             </svg>
           </div>
         </div>
@@ -123,5 +222,6 @@
         </a>
       </div>
     </header>
+    <script src="./scripts/app.js" type="text/javascript"></script>
   </body>
 </html>
