@@ -39,9 +39,19 @@
       url("../fonts/Morabba/woff2/Morabba-Bold.woff2") format("woff2");
     font-display: "swap";
   }
-}
-/* @layer components {
-  .text-normal {
-    @apply font-medium text-xs leading-6;
+  .customize-zoom {
+    zoom: 0.8;
   }
-} */
+}
+@layer components {
+  .scrollbar-customize {
+    scrollbar-gutter: stable;
+  }
+  .scrollbar-customize::-webkit-scrollbar {
+    width: 3px;
+  }
+  .scrollbar-customize::-webkit-scrollbar-thumb {
+    background: #71717a;
+    border-radius: 100px;
+  }
+}
