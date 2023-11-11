@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html,
+  body {
+    height: -webkit-fill-available;
+  }
   @font-face {
     font-family: "Dana";
     src: local("Dana"),
@@ -53,5 +57,14 @@
   .scrollbar-customize::-webkit-scrollbar-thumb {
     background: #71717a;
     border-radius: 100px;
+  }
+  #mobileMenu > li.show {
+    @apply text-orange-300;
+  }
+  #mobileMenu > li.show > div {
+    @apply h-[216px] overscroll-auto pt-3;
+  }
+  #mobileMenu > li.show .chevron-down {
+    @apply rotate-1;
   }
 }
