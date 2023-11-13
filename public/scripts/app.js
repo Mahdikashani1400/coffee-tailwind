@@ -32,14 +32,14 @@ let mobileNav = $.getElementById('mobileNav')
 let barsBtn = $.getElementById('barsBtn')
 let markBtn = $.getElementById('markBtn')
 barsBtn.addEventListener('click', () => {
-    mobileNav.style.right = '0'
+    sideBarHandler(mobileNav, 'open', 'right')
 })
 markBtn.addEventListener('click', () => {
-    console.log('g');
-    mobileNav.style.right = '-256px'
+    sideBarHandler(mobileNav, 'close', 'right')
+
 })
 
-// mobileMenu
+// mobileSubsetMenu
 
 let subsetMenuContainer = $.querySelector('#mobileMenu > li.relative')
 subsetMenuContainer.addEventListener('click', (e) => {
@@ -47,3 +47,34 @@ subsetMenuContainer.addEventListener('click', (e) => {
     e.currentTarget.classList.toggle('show')
 })
 
+
+// mobileUserBasket
+
+let mobileUserBasket = $.getElementById('mobileUserBasket')
+let closeUserBasket = $.getElementById('closeUserBasket')
+closeUserBasket.addEventListener('click', () => {
+    sideBarHandler(mobileUserBasket, 'close', 'left')
+
+})
+
+let shoppingIconMobiles = $.querySelectorAll('.shopping-icon-mobile')
+shoppingIconMobiles.forEach(icon => {
+    icon.addEventListener('click', () => {
+        sideBarHandler(mobileUserBasket, 'open', 'left')
+
+    })
+})
+
+// sideBarHandler
+
+function sideBarHandler(elem, state, side) {
+
+    if (state === 'close') {
+
+        elem.style[side] = '-256px'
+
+    } else {
+        elem.style[side] = '0'
+
+    }
+}
