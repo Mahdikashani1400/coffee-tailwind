@@ -4,8 +4,10 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+
       backgroundImage: {
-        "header": "url('../images/headerBgDesktop.png')"
+        "header-desktop": "url('../images/headerBgDesktop.png')",
+        "header-mobile": "url('../images/headerBgMobile.webp')"
       },
       colors: {
         "brown": {
@@ -17,6 +19,9 @@ module.exports = {
       },
       boxShadow: {
         "main": "0px 1px 10px 0px rgba(0, 0, 0, 0.05)"
+      },
+      dropShadow: {
+        'main': " 0px 0px 10px rgba(0, 0, 0, 0.40)"
       },
       borderRadius: {
         '4xl': '2rem'
@@ -35,9 +40,27 @@ module.exports = {
       transitionProperty: {
         "height": "height",
 
-      }
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '1rem',
+          lg: '0.625rem'
+        }
+      },
 
     },
+    screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+    }
   },
   plugins: [
     function ({ addVariant }) {

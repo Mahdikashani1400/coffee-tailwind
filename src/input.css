@@ -62,9 +62,18 @@
     @apply text-orange-300;
   }
   #mobileMenu > li.show > div {
-    @apply h-[216px] overscroll-auto pt-3;
+    @apply h-[216px] overscroll-auto;
   }
   #mobileMenu > li.show .chevron-down {
     @apply rotate-1;
+  }
+
+  /* subset__item--active */
+  .subset__item--active {
+    @apply text-orange-300 pr-2.5 relative;
+  }
+  .subset__item--active::before {
+    content: "";
+    @apply absolute w-1 h-1 rounded-[50%] bg-orange-300 block top-0 right-0 bottom-0 m-auto;
   }
 }
