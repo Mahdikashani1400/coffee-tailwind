@@ -33,9 +33,14 @@ let barsBtn = $.getElementById('barsBtn')
 let markBtn = $.getElementById('markBtn')
 barsBtn.addEventListener('click', () => {
     sideBarHandler(mobileNav, 'open', 'right')
+    mobileNav.classList.add('open')
+    $.body.classList.add('open')
 })
 markBtn.addEventListener('click', () => {
     sideBarHandler(mobileNav, 'close', 'right')
+    mobileNav.classList.remove('open')
+    $.body.classList.remove('open')
+
 
 })
 
@@ -53,7 +58,10 @@ subsetMenuContainer.addEventListener('click', (e) => {
 let mobileUserBasket = $.getElementById('mobileUserBasket')
 let closeUserBasket = $.getElementById('closeUserBasket')
 closeUserBasket.addEventListener('click', () => {
+
     sideBarHandler(mobileUserBasket, 'close', 'left')
+    mobileUserBasket.classList.remove('open')
+    $.body.classList.remove('open')
 
 })
 
@@ -61,7 +69,8 @@ let shoppingIconMobiles = $.querySelectorAll('.shopping-icon-mobile')
 shoppingIconMobiles.forEach(icon => {
     icon.addEventListener('click', () => {
         sideBarHandler(mobileUserBasket, 'open', 'left')
-
+        mobileUserBasket.classList.add('open')
+        $.body.classList.add('open')
     })
 })
 

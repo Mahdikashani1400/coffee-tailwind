@@ -6,6 +6,7 @@
   html,
   body {
     height: -webkit-fill-available;
+    overflow-x: hidden;
   }
   @font-face {
     font-family: "Dana";
@@ -58,6 +59,12 @@
     background: #71717a;
     border-radius: 100px;
   }
+
+  /*  */
+  /* body.open:not(#mobileNav.open) {
+    filter: brightness(0.4);
+  } */
+
   #mobileMenu > li.show {
     @apply text-orange-300;
   }
@@ -78,19 +85,76 @@
   }
 
   /* title */
-  .title h1 {
-    @apply text-white font-medium text-5xl font-MorabbaLight;
+  .title h3 {
+    @apply text-zinc-700 dark:text-white font-medium lg:text-5xl text-2xl md:text-3xl font-MorabbaLight;
   }
   .title .title__guide {
     @apply flex justify-between;
   }
   .title__guide h6 {
-    @apply font-MorabbaLight text-white leading-[48px] text-3xl font-light;
+    @apply font-MorabbaLight text-zinc-700 dark:text-white lg:leading-[48px] lg:text-3xl md:text-2xl text-lg font-light;
   }
   .title__guide .see__all {
-    @apply text-orange-300 text-xl tracking-tightest font-normal flex items-center gap-x-1;
+    @apply text-orange-300 lg:text-xl md:text-lg text-base tracking-tightest font-normal items-center gap-x-1;
   }
   .title__guide .see__all svg {
     @apply w-5 h-5 font-medium shrink-0;
+  }
+
+  /* product */
+
+  .product__box-content {
+    @apply relative flex flex-col gap-y-5 bg-white dark:bg-zinc-700 lg:p-5 p-2 rounded-2xl;
+  }
+  .product__discount {
+    @apply absolute  lg:top-6 top-3 lg:right-6 right-3 flex items-center justify-center bg-orange-300 lg:w-[54px] lg:h-[30px] w-10 h-5 rounded-full;
+  }
+  .product__discount span {
+    @apply lg:text-base text-xs font-semibold dark:text-zinc-700 text-white;
+  }
+  .product__img {
+    @apply w-32 lg:w-[260px] h-32 lg:h-[260px] mx-auto;
+  }
+  .product__name {
+    @apply line-clamp-2 dark:text-white text-zinc-700 text-sm lg:text-xl font-medium;
+  }
+  .product__price-info {
+    @apply lg:pt-2.5 pt-1.5 flex gap-x-2.5;
+  }
+  .no__product {
+    @apply text-red-400 lg:text-xl md:text-lg text-sm font-normal;
+  }
+  .product__price {
+    @apply text-emerald-500 text-xs lg:text-sm font-normal tracking-[-0.7px];
+  }
+  .product__price-number {
+    @apply font-semibold lg:text-xl text-base;
+  }
+  .product__price--del {
+    @apply text-gray-400 lg:text-base text-sm font-semibold tracking-[-0.7px] line-through decoration-red-500;
+  }
+  .product__nav {
+    @apply flex justify-between items-center;
+  }
+  .product__buy {
+    @apply flex items-center gap-x-5;
+  }
+  .product__buy span {
+    @apply lg:w-9 w-[26px] lg:h-9 h-[26px] flex justify-center items-center dark:bg-zinc-800 bg-gray-100 rounded-full;
+  }
+  .product__buy svg {
+    @apply lg:w-[22px] w-4 lg:h-[22px] h-4 dark:text-white/60 text-gray-400;
+  }
+  .product__arrow {
+    @apply lg:w-6 w-4 lg:h-6 h-4;
+  }
+  .product__stars {
+    @apply flex;
+  }
+  .product__stars svg.active {
+    @apply lg:w-6 w-5 lg:h-6 h-5 text-yellow-400;
+  }
+  .product__stars svg:not(.active) {
+    @apply lg:w-6 w-5 lg:h-6 h-5 dark:text-white/60 text-gray-300;
   }
 }

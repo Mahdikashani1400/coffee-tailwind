@@ -853,80 +853,383 @@
       </section>
 
       <section
-        class="relative product bg-products bg-cover bg-no-repeat bg-center"
+        class="relative product bg-products bg-cover bg-no-repeat bg-[#d3d3d380]"
       >
         <div class="absolute md:flex hidden justify-center -top-[15px] w-full">
           <div
             class="w-[30px] h-[30px] border-2 border-orange-300 rounded-full"
           ></div>
         </div>
-        <div class="container pt-48">
+        <div class="container lg:pt-48 pt-8">
           <div class="flex flex-col">
             <div class="title">
-              <h1 class="">جدیدترین محصولات</h1>
+              <h3 class="">جدیدترین محصولات</h3>
               <div class="title__guide">
                 <h6 class="">فرآوری شده از دانه قهوه</h6>
-                <a class="see__all" href="#">
+                <a class="see__all hidden lg:flex" href="#">
                   مشاهده همه محصولات
+                  <svg class="">
+                    <use href="#chevron-left"></use>
+                  </svg>
+                </a>
+                <a class="see__all lg:hidden flex" href="#">
+                  مشاهده همه
                   <svg class="">
                     <use href="#chevron-left"></use>
                   </svg>
                 </a>
               </div>
             </div>
-            <div class="products py-12 grid grid-cols-4">
+            <div
+              class="lg:py-12 py-5 grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 lg:gap-5 gap-[14px]"
+            >
               <div class="product__box">
-                <div
-                  class="product__box-content flex flex-col gap-y-5 bg-zinc-700 p-5 rounded-2xl"
-                >
-                  <div class="w-[260px] h-[260px]">
-                    <img src="./images/products/p1.png" alt="" />
+                <div class="product__box-content">
+                  <div class="product__discount">
+                    <span class="">12%</span>
+                  </div>
+                  <div class="product__img">
+                    <img src="./images/products/p2.png" alt="" />
                   </div>
                   <div class="">
-                    <p class="line-clamp-2 text-white text-xl font-medium">
+                    <p class="product__name">
                       قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
                     </p>
-                    <div class="pt-2.5 flex gap-x-2.5">
-                      <p
-                        class="text-emerald-500 text-sm font-normal tracking-[-0.7px]"
-                      >
-                        <span class="font-semibold text-xl">175,000</span>
+                    <div class="product__price-info">
+                      <p class="product__price">
+                        <span class="product__price-number">175,000</span>
                         تومان
                       </p>
-                      <p
-                        class="text-gray-400 text-base font-semibold tracking-[-0.7px] line-through decoration-red-500"
-                      >
-                        175,000 تومان
-                      </p>
+                      <p class="product__price--del">175,000 تومان</p>
                     </div>
                   </div>
-                  <div class="flex justify-between items-center">
-                    <a href="#" class="flex items-center gap-x-5 text-white/60">
-                      <span
-                        class="w-9 h-9 flex justify-center items-center bg-zinc-800 rounded-full"
-                      >
-                        <svg class="w-[22px] h-[22px]">
+                  <div class="product__nav">
+                    <a href="#" class="product__buy">
+                      <span class="">
+                        <svg class="">
                           <use href="#shopping-cart"></use>
                         </svg>
                       </span>
-                      <svg class="w-6 h-6">
+                      <svg class="product__arrow">
                         <use href="#arrows-right-left"></use>
                       </svg>
                     </a>
-                    <a class="flex" href="#">
-                      <svg class="w-6 h-6 text-white/60">
+                    <a class="product__stars" href="#">
+                      <svg class="">
                         <use href="#star"></use>
                       </svg>
-                      <svg class="w-6 h-6 text-yellow-400">
+                      <svg class="active">
                         <use href="#star"></use>
                       </svg>
-                      <svg class="w-6 h-6 text-yellow-400">
+                      <svg class="active">
                         <use href="#star"></use>
                       </svg>
-                      <svg class="w-6 h-6 text-yellow-400">
+                      <svg class="active">
                         <use href="#star"></use>
                       </svg>
-                      <svg class="w-6 h-6 text-yellow-400">
+                      <svg class="active">
+                        <use href="#star"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product__box">
+                <div class="product__box-content">
+                  <div class="product__discount">
+                    <span class="">12%</span>
+                  </div>
+                  <div class="product__img">
+                    <img src="./images/products/p3.png" alt="" />
+                  </div>
+                  <div class="">
+                    <p class="product__name">
+                      قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
+                    </p>
+                    <div class="product__price-info">
+                      <p class="no__product">فعلا موجود نیست</p>
+                    </div>
+                  </div>
+                  <div class="product__nav">
+                    <a href="#" class="product__buy">
+                      <span class="">
+                        <svg class="">
+                          <use href="#shopping-cart"></use>
+                        </svg>
+                      </span>
+                      <svg class="product__arrow">
+                        <use href="#arrows-right-left"></use>
+                      </svg>
+                    </a>
+                    <a class="product__stars" href="#">
+                      <svg class="">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="active">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="active">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="active">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="active">
+                        <use href="#star"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product__box">
+                <div class="product__box-content">
+                  <div class="product__discount">
+                    <span class="">12%</span>
+                  </div>
+                  <div class="product__img">
+                    <img src="./images/products/p4.png" alt="" />
+                  </div>
+                  <div class="">
+                    <p class="product__name">
+                      قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
+                    </p>
+                    <div class="product__price-info">
+                      <p class="product__price">
+                        <span class="product__price-number">175,000</span>
+                        تومان
+                      </p>
+                      <p class="product__price--del">175,000 تومان</p>
+                    </div>
+                  </div>
+                  <div class="product__nav">
+                    <a href="#" class="product__buy">
+                      <span class="">
+                        <svg class="">
+                          <use href="#shopping-cart"></use>
+                        </svg>
+                      </span>
+                      <svg class="product__arrow">
+                        <use href="#arrows-right-left"></use>
+                      </svg>
+                    </a>
+                    <a class="product__stars" href="#">
+                      <svg class="">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="active">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="active">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="active">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="active">
+                        <use href="#star"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product__box">
+                <div class="product__box-content">
+                  <div class="product__discount">
+                    <span class="">12%</span>
+                  </div>
+                  <div class="product__img">
+                    <img src="./images/products/p2.png" alt="" />
+                  </div>
+                  <div class="">
+                    <p class="product__name">
+                      قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
+                    </p>
+                    <div class="product__price-info">
+                      <p class="product__price">
+                        <span class="product__price-number">175,000</span>
+                        تومان
+                      </p>
+                      <p class="product__price--del">175,000 تومان</p>
+                    </div>
+                  </div>
+                  <div class="product__nav">
+                    <a href="#" class="product__buy">
+                      <span class="">
+                        <svg class="">
+                          <use href="#shopping-cart"></use>
+                        </svg>
+                      </span>
+                      <svg class="product__arrow">
+                        <use href="#arrows-right-left"></use>
+                      </svg>
+                    </a>
+                    <a class="product__stars" href="#">
+                      <svg class="">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="active">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="active">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="active">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="active">
+                        <use href="#star"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product__box">
+                <div class="product__box-content">
+                  <div class="product__discount">
+                    <span class="">12%</span>
+                  </div>
+                  <div class="product__img">
+                    <img src="./images/products/p1.png" alt="" />
+                  </div>
+                  <div class="">
+                    <p class="product__name">
+                      قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
+                    </p>
+                    <div class="product__price-info">
+                      <p class="product__price">
+                        <span class="product__price-number">175,000</span>
+                        تومان
+                      </p>
+                      <p class="product__price--del">175,000 تومان</p>
+                    </div>
+                  </div>
+                  <div class="product__nav">
+                    <a href="#" class="product__buy">
+                      <span class="">
+                        <svg class="">
+                          <use href="#shopping-cart"></use>
+                        </svg>
+                      </span>
+                      <svg class="product__arrow">
+                        <use href="#arrows-right-left"></use>
+                      </svg>
+                    </a>
+                    <a class="product__stars" href="#">
+                      <svg class="">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="active">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="active">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="active">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="active">
+                        <use href="#star"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product__box">
+                <div class="product__box-content">
+                  <div class="product__discount">
+                    <span class="">12%</span>
+                  </div>
+                  <div class="product__img">
+                    <img src="./images/products/p4.png" alt="" />
+                  </div>
+                  <div class="">
+                    <p class="product__name">
+                      قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
+                    </p>
+                    <div class="product__price-info">
+                      <p class="product__price">
+                        <span class="product__price-number">175,000</span>
+                        تومان
+                      </p>
+                      <p class="product__price--del">175,000 تومان</p>
+                    </div>
+                  </div>
+                  <div class="product__nav">
+                    <a href="#" class="product__buy">
+                      <span class="">
+                        <svg class="">
+                          <use href="#shopping-cart"></use>
+                        </svg>
+                      </span>
+                      <svg class="product__arrow">
+                        <use href="#arrows-right-left"></use>
+                      </svg>
+                    </a>
+                    <a class="product__stars" href="#">
+                      <svg class="">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="active">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="active">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="active">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="active">
+                        <use href="#star"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product__box">
+                <div class="product__box-content">
+                  <div class="product__discount">
+                    <span class="">12%</span>
+                  </div>
+                  <div class="product__img">
+                    <img src="./images/products/p3.png" alt="" />
+                  </div>
+                  <div class="">
+                    <p class="product__name">
+                      قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم طولانی
+                    </p>
+                    <div class="product__price-info">
+                      <p class="product__price">
+                        <span class="product__price-number">175,000</span>
+                        تومان
+                      </p>
+                      <p class="product__price--del">175,000 تومان</p>
+                    </div>
+                  </div>
+                  <div class="product__nav">
+                    <a href="#" class="product__buy">
+                      <span class="">
+                        <svg class="">
+                          <use href="#shopping-cart"></use>
+                        </svg>
+                      </span>
+                      <svg class="product__arrow">
+                        <use href="#arrows-right-left"></use>
+                      </svg>
+                    </a>
+                    <a class="product__stars" href="#">
+                      <svg class="">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="active">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="active">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="active">
+                        <use href="#star"></use>
+                      </svg>
+                      <svg class="active">
                         <use href="#star"></use>
                       </svg>
                     </a>
