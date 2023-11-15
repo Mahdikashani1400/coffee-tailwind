@@ -439,7 +439,7 @@
       </div>
     </header>
     <div
-      class="flex md:hidden justify-between items-center bg-white dark:bg-zinc-700 h-16 relative py-3 px-4"
+      class="flex md:hidden justify-between items-center bg-white dark:bg-zinc-700 h-16 relative py-3 px-4 z-50"
     >
       <div class="cursor-pointer" id="barsBtn">
         <svg class="w-8 h-8 text-zinc-700 dark:text-white">
@@ -776,21 +776,29 @@
 
     <main class="relative">
       <section
-        class="home lg:bg-header-desktop bg-header-mobile h-[905px] lg:bg-cover bg-contain bg-no-repeat"
+        class="home flex items-center md:bg-header-desktop bg-header-mobile md:h-[905px] sm:h-[500px] xs:h-96 h-60 bg-cover bg-no-repeat"
       >
         <div class=""></div>
-        <div class="container pt-56">
+        <div class="container">
           <div
-            class="flex flex-col justify-center items-start mr-auto w-[460px] font-MorabbaLight text-white"
+            class="flex flex-col justify-center items-start mr-auto md:w-[460px] sm:w-96 xs:w-72 xs:mr-40 sm:mr-auto w-52 font-MorabbaLight text-white"
           >
-            <h1 class="pb-2 text-6xl font-bold drop-shadow-main leading-[62px]">
+            <h1
+              class="pb-2 md:text-6xl sm:text-4xl xs:text-3xl text-2xl font-bold pl-4 md:pl-0 drop-shadow-main md:leading-[62px]"
+            >
               قهوه عربیکا تانزانیا
             </h1>
-            <h4 class="text-5xl font-light leading-[64px]">
+            <h4
+              class="md:text-5xl sm:text-3xl xs:text-2xl text-xl font-light md:leading-[64px] pl-4 md:pl-0"
+            >
               یک فنجان بالانس !
             </h4>
-            <span class="my-8 w-[100px] h-0.5 bg-orange-300 shadow-main"></span>
-            <p class="font-normal text-2xl font-Dana">
+            <span
+              class="md:my-8 sm:my-5 my-3 w-[100px] h-0.5 bg-orange-300 shadow-main"
+            ></span>
+            <p
+              class="font-normal md:text-2xl sm:text-xl xs:text-base text-xs font-Dana"
+            >
               قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه
               است که در نواحی مختلف کمربند قهوه کشت میشود.
             </p>
