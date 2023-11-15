@@ -7,7 +7,8 @@ module.exports = {
 
       backgroundImage: {
         "header-desktop": "url('../images/headerBgDesktop.png')",
-        "header-mobile": "url('../images/headerBgMobile.webp')"
+        "header-mobile": "url('../images/headerBgMobile.webp')",
+        "products": "url('../images/body-bg.png')"
       },
       colors: {
         "brown": {
