@@ -76,4 +76,21 @@
     content: "";
     @apply absolute w-1 h-1 rounded-[50%] bg-orange-300 block top-0 right-0 bottom-0 m-auto;
   }
+
+  /* title */
+  .title h1 {
+    @apply text-white font-medium text-5xl font-MorabbaLight;
+  }
+  .title .title__guide {
+    @apply flex justify-between;
+  }
+  .title__guide h6 {
+    @apply font-MorabbaLight text-white leading-[48px] text-3xl font-light;
+  }
+  .title__guide .see__all {
+    @apply text-orange-300 text-xl tracking-tightest font-normal flex items-center gap-x-1;
+  }
+  .title__guide .see__all svg {
+    @apply w-5 h-5 font-medium shrink-0;
+  }
 }
