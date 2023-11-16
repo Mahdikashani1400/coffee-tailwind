@@ -12,7 +12,8 @@ module.exports = {
         "header-desktop": "url('../images/headerBgDesktop.png')",
         "header-mobile": "url('../images/headerBgMobile.webp')",
         "products": "url('../images/body-bg.png')",
-
+        "club": "linear-gradient(90deg, #10B981 0%, #059669 100%)",
+        "club-btn": " linear-gradient(270deg, #FDBA74 0%, #FED7AA 100%)",
       },
 
       colors: {
@@ -57,7 +58,7 @@ module.exports = {
 
     },
     screens: {
-      'xs': '400px',
+      'xs': '390px',
       // => @media (min-width: 640px) { ... }
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
