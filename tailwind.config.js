@@ -4,12 +4,17 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
-
+      spacing: {
+        "25": "6.25rem",
+        "50": "12.5rem"
+      },
       backgroundImage: {
         "header-desktop": "url('../images/headerBgDesktop.png')",
         "header-mobile": "url('../images/headerBgMobile.webp')",
-        "products": "url('../images/body-bg.png')"
+        "products": "url('../images/body-bg.png')",
+
       },
+
       colors: {
         "brown": {
           100: "#ECE0D1",
@@ -52,7 +57,7 @@ module.exports = {
 
     },
     screens: {
-      'xs': '425px',
+      'xs': '400px',
       // => @media (min-width: 640px) { ... }
       'sm': '640px',
       // => @media (min-width: 640px) { ... }
