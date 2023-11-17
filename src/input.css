@@ -45,9 +45,9 @@
       url("../fonts/Morabba/woff2/Morabba-Bold.woff2") format("woff2");
     font-display: "swap";
   }
-  .customize-zoom {
+  /* .customize-zoom {
     zoom: 0.8;
-  }
+  } */
 }
 @layer components {
   .scrollbar-customize {
@@ -63,7 +63,7 @@
   /*  */
 
   #mobileNav.open {
-    box-shadow: -294px 9px 1089px 245px #0000007a;
+    box-shadow: -294px 9px 1089px 550px rgba(0, 0, 0, 0.4);
   }
 
   /*  */
@@ -89,7 +89,7 @@
   /*  */
 
   #mobileUserBasket.open {
-    box-shadow: 294px 9px 1089px 245px #0000007a;
+    box-shadow: 294px 9px 1089px 550px rgba(0, 0, 0, 0.4);
   }
 
   /* title */
@@ -99,13 +99,13 @@
   .title .title__guide {
     @apply flex justify-between;
   }
-  .title__guide h6 {
+  .title h6 {
     @apply font-MorabbaLight text-zinc-700 dark:text-white lg:leading-[48px] lg:text-3xl md:text-2xl text-lg font-light;
   }
-  .title__guide .see__all {
+  .title .see__all {
     @apply text-orange-300  lg:text-xl md:text-lg text-base tracking-tightest font-semibold items-center gap-x-1;
   }
-  .title__guide .see__all svg {
+  .title .see__all svg {
     @apply w-5 h-5 font-medium shrink-0 stroke-2;
   }
 
@@ -184,5 +184,43 @@
 
   .product__category--content > div {
     /* @apply w-[200px] h-[200px] bg-no-repeat bg-center bg-cover; */
+  }
+
+  /* blog */
+  .blog__box {
+    @apply flex sm:flex-col  rounded-2xl bg-white dark:bg-zinc-700 p-4 sm:p-2.5;
+  }
+  .blog__img {
+    @apply sm:pb-3 pl-2.5;
+  }
+  .blog__img img {
+    @apply rounded-2xl rounded-bl-4xl h-full;
+  }
+  .blog__info {
+    @apply flex flex-col sm:flex-row justify-center gap-x-10;
+  }
+  .blog__title {
+    @apply w-[184px] sm:w-fit h-min leading-7 text-zinc-700 dark:text-white sm:text-lg text-sm pb-5 sm:pb-0 font-medium sm:font-normal line-clamp-2;
+  }
+  .blog__nav {
+    @apply flex justify-between pt-5 sm:pt-0 sm:pl-[18px] sm:pr-4 sm:border-r sm:border-t-0 border-t border-gray-100 dark:border-white/10;
+  }
+  .blog__date {
+    @apply text-emerald-600 flex items-end pb-[1px] sm:pb-0 sm:flex-col gap-x-1;
+  }
+  .blog__day {
+    @apply sm:font-semibold font-normal sm:text-2xl text-xs;
+  }
+  .blog__date-m-y {
+    @apply font-normal sm:text-sm text-xs;
+  }
+  .blog__btn {
+    @apply text-xs font-normal text-orange-300 flex sm:hidden justify-center items-center bg-orange-300/20 rounded-md w-[71px] h-[22px];
+  }
+  .blog__btn svg {
+    @apply w-4 h-4 pr-1.5;
+  }
+  .blog__btn span {
+    @apply pt-1;
   }
 }
