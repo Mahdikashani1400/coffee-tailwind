@@ -50,6 +50,10 @@
   } */
 }
 @layer components {
+  span,
+  p {
+    user-select: none;
+  }
   .scrollbar-customize {
     scrollbar-gutter: stable;
   }
