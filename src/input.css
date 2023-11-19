@@ -192,7 +192,7 @@
 
   /* blog */
   .blog__box {
-    @apply flex sm:flex-col  rounded-2xl bg-white dark:bg-zinc-700 p-4 sm:p-2.5;
+    @apply flex sm:flex-col  rounded-2xl bg-white dark:bg-zinc-700 p-3 sm:p-2.5;
   }
   .blog__img {
     @apply sm:pb-3 sm:pl-0 pl-2.5;
@@ -204,7 +204,7 @@
     @apply flex flex-col sm:flex-row justify-center gap-x-10;
   }
   .blog__title {
-    @apply w-[184px] sm:w-fit h-min leading-7 text-zinc-700 dark:text-white sm:text-lg text-sm pb-5 sm:pb-0 font-medium sm:font-normal line-clamp-2;
+    @apply w-44 sm:w-fit h-min leading-7 text-zinc-700 dark:text-white sm:text-lg text-sm pb-5 sm:pb-0 font-medium sm:font-normal line-clamp-2;
   }
   .blog__nav {
     @apply flex justify-between pt-5 sm:pt-0 sm:pl-[18px] sm:pr-4 sm:border-r sm:border-t-0 border-t border-gray-100 dark:border-white/10;

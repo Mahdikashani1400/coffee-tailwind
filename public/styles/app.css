@@ -1263,7 +1263,7 @@ span,
   border-radius: 1rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding: 1rem;
+  padding: 0.75rem;
 }
 
 :is(.dark .blog__box) {
@@ -1316,7 +1316,7 @@ span,
   -webkit-line-clamp: 2;
   height: -moz-min-content;
   height: min-content;
-  width: 184px;
+  width: 11rem;
   padding-bottom: 1.25rem;
   font-size: 0.875rem;
   font-weight: 500;
@@ -2594,6 +2594,11 @@ span,
   .sm\:my-5 {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
+  }
+
+  .sm\:my-12 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
   .sm\:mr-auto {
