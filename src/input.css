@@ -252,4 +252,28 @@
   .services__subset {
     @apply font-normal lg:text-sm text-xs;
   }
+
+  .services__svg--color {
+    @apply dark:fill-white fill-zinc-700;
+  }
+
+  /* end__shape */
+  .end__shape {
+    left: calc(-90px + 50%);
+    @apply absolute rotate-45 rounded-[46px] bottom-0 w-[13.5rem] h-48 bg-zinc-800;
+  }
+
+  /* footer */
+  .footer__container {
+    @apply px-[96px];
+  }
+  .footer__social-btn {
+    @apply border border-orange-200  w-[248px] h-12 rounded-xl flex gap-x-2 items-center justify-center font-normal;
+  }
+  .footer__social-btn span {
+    padding-top: 5px;
+  }
+  .footer__social-btn.telegram {
+    background: linear-gradient(270deg, #fdba74 0%, #fed7aa 100%);
+  }
 }
