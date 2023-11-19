@@ -1559,10 +1559,6 @@ span,
   margin-top: 0.5rem;
 }
 
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -1752,10 +1748,6 @@ span,
 
 .w-\[230px\] {
   width: 230px;
-}
-
-.w-\[296px\] {
-  width: 296px;
 }
 
 .w-\[30px\] {
@@ -2259,16 +2251,16 @@ span,
   letter-spacing: 0em;
 }
 
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
 .tracking-tighter {
   letter-spacing: -0.05em;
 }
 
 .tracking-tightest {
   letter-spacing: -0.065em;
-}
-
-.tracking-tight {
-  letter-spacing: -0.025em;
 }
 
 .text-gray-300 {
