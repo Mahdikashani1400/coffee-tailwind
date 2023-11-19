@@ -108,6 +108,20 @@
           d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0l-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 014.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 00-.38 1.21 12.035 12.035 0 007.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 011.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 01-2.25 2.25h-2.25z"
         />
       </symbol>
+      <symbol
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        id="phone"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+        />
+      </symbol>
 
       <symbol
         xmlns="http://www.w3.org/2000/svg"
@@ -1646,7 +1660,7 @@
       </section>
       <section class="blogs">
         <div class="container">
-          <div class="flex flex-col">
+          <div class="flex flex-col lg:gap-y-12 gap-y-5">
             <div class="title flex justify-between items-baseline">
               <h3>مطالب خواندنی</h3>
               <a class="see__all hidden lg:flex" href="#">
@@ -1663,7 +1677,7 @@
               </a>
             </div>
             <div
-              class="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 lg:py-12 py-5"
+              class="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5"
             >
               <div class="blog__box">
                 <div class="blog__img">
@@ -1751,6 +1765,47 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact__us lg:my-28 my-8">
+        <div class="container">
+          <div
+            class="flex flex-col lg:flex-row lg:gap-x-5 items-center lg:gap-y-0 gap-y-8"
+          >
+            <div class="xs:w-[296px] w-64 lg:w-fit">
+              <img class="" src="./images/contact.png" alt="" />
+            </div>
+            <div class="w-fit flex flex-col gap-y-5 lg:gap-y-0">
+              <div class="title">
+                <h3>یکی از بهترین قهوه ها !</h3>
+                <div class="title__guide">
+                  <h6>کیفیت قهوه را از ما بخواهید ...</h6>
+                </div>
+              </div>
+              <div
+                class="lg:my-6 flex gap-x-2.5 child:w-1 child:h-1 child:bg-gray-400 child:rounded-full"
+              >
+                <span></span><span></span><span></span>
+              </div>
+              <p
+                class="text-white lg:text-2xl text-lg font-normal text-justify lg:leading-8 leading-7"
+              >
+                فضای گرم و دنج ما را احساس کنید، جایی که همه می توانند قهوه
+                معطری پیدا کنند و دسرهای خوشمزه ما را که کاملاً با قهوه داغ
+                همراه شده است، امتحان کنند. فضای داخلی شیک و کارکنان خوش برخورد
+                ما روز شما را می سازد!
+              </p>
+              <a
+                href="#"
+                class="lg:mt-6 lg:w-[216px] w-[180px] lg:h-[60px] h-[50px] p-[14px] flex items-center justify-center rounded-full border-2 border-orange-300 text-orange-300 lg:text-xl text-base font-normal lg:tracking-tightest tracking-tight"
+              >
+                <svg class="pl-2 w-8 h-8">
+                  <use href="#phone"></use>
+                </svg>
+                ثبت سفارش تلفنی
+              </a>
             </div>
           </div>
         </div>
