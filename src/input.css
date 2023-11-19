@@ -227,4 +227,29 @@
   .blog__btn span {
     @apply pt-1;
   }
+
+  /* services */
+  .services__boxes__container {
+    @apply relative grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 items-center gap-y-11;
+  }
+  .services__boxes__container::after {
+    content: "";
+    @apply w-[1px] h-full left-1/2 absolute bg-gray-300 dark:bg-white/10 sm:hidden;
+  }
+  .services__boxes__container::before {
+    content: "";
+    @apply h-[1px] w-full top-1/2 absolute bg-gray-300 dark:bg-white/10 sm:hidden;
+  }
+  .services__box {
+    @apply flex flex-col sm:flex-row gap-x-4 items-center;
+  }
+  .services__content {
+    @apply dark:text-white text-zinc-700 leading-6 flex flex-col pt-5 lg:pt-0 lg:gap-y-4 gap-y-2;
+  }
+  .services__info {
+    @apply lg:text-lg sm:text-base text-sm  font-semibold;
+  }
+  .services__subset {
+    @apply font-normal lg:text-sm text-xs;
+  }
 }
